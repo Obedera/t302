@@ -16,4 +16,4 @@ def verificar_maior(vetor):
 def maior_valor(vetor):
     return max(vetor, key=int)
 
-print(f'Lista {lista} valormax {verificar_maior(lista)} valormax phyton{maior_valor(lista)}')gi
+print(f'Lista {lista} valormax {verificar_maior(lista)} valormax phyton{maior_valor(lista)}')
