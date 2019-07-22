@@ -1,7 +1,9 @@
-python -m venv env //Cria o ambiente 
+python -m venv .env //Cria o ambiente 
+python -m venv env //tbm faz a mesma coisa
 source env/Scripts/activate no windows //ativar o ambiente
 source env/bin/activate no linux
 deactivate //sai do ambiente
 pip freeze //Mostra oq está instalado no ambiente
+pip install --upgrade pip //atualiza o pip
 pip freeze > requirements.txt //Move a lista de arquivos necessarios para rodar
 pip install -r requirements.txt //instala os arquivos do requirements
