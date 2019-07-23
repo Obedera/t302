@@ -13,3 +13,38 @@ django
 django-admin startproject <nome do projeto> . //Criar projeto
 python manage.py runserver //Iniciar servidor
 python manage.py startapp <nome do modulo> //criar modulo
+e dentro da aplicação criar uma pasta templates e colocar lá os arquivos html
+no settings do projeto tem que configurar
+INSTALLED_APPS = [
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
+    '<nome da nova aplicação>',
+]
+
+DEBUG = True // mostra o erro quando true (deixar false quando mandar pra o cliente para eles não verem erros)
+
+ALLOWED_HOSTS = [] //quando vazio permite que só a maquina local faça requisitos( deixar ['*'] para que todos façam request ou o ip  especifico da maquina que poderar fazer request
+
+
+LANGUAGE_CODE = 'pt-br' //deixar o django em portugues
+
+no urls do projeto tem que configurar
+from <nome da aplicação> import views
+    urlpatterns = [
+    path('', views.index),
+    path('admin/', admin.site.urls),
+]
+
+
+no models.py define a estrutura do bd
+
+
+
+
+
+{{<varial python do view}}
+
