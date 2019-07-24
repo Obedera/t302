@@ -14,6 +14,8 @@ django-admin startproject <nome do projeto> . //Criar projeto
 python manage.py runserver //Iniciar servidor
 python manage.py startapp <nome do modulo> //criar modulo
 e dentro da aplicação criar uma pasta templates e colocar lá os arquivos html
+e dentro de templates criar
+e dentro da aplicação criar um arquivo urls.py
 no settings do projeto tem que configurar
 INSTALLED_APPS = [
     'django.contrib.admin',
