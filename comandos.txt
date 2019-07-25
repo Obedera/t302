@@ -17,6 +17,18 @@ e dentro da aplicação criar uma pasta templates e colocar lá os arquivos html
 e dentro de templates criar
 e dentro da aplicação criar um arquivo urls.py
 no settings do projeto tem que configurar
+python manage.py makemigrations //cria um arquivo traduzindo o model para o bd(um arquivo de migração) e tbm um historico
+python manage.py migrate //com base do arquivo dos migrations ele cria ou modifica o bd 
+python manage.py createsuperuser //cria o admin do bd no linux
+winpty python manage.py createsuperuser //cria o admin do bd no windows
+no formulario sempre colocar o {% csrf_token %} é obrigatorio
+
+shell query django
+
+<nome da class>.objects.all() //pega todas os objetos do bd
+<nome da class>.objects.filter(<atributo> = '<valor buscado do atributo>', <atributo> = '<valor buscado do atributo>') //filtra os resultados
+pk // id em django
+
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
