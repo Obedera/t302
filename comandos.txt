@@ -8,6 +8,7 @@ pip install --upgrade pip //atualiza o pip
 pip freeze > requirements.txt //Move a lista de arquivos necessarios para rodar
 pip install -r requirements.txt //instala os arquivos do requirements
 
+https://pt.lmgtfy.com/
 django
 
 django-admin startproject <nome do projeto> . //Criar projeto
@@ -28,6 +29,7 @@ shell query django
 <nome da class>.objects.all() //pega todas os objetos do bd
 <nome da class>.objects.filter(<atributo> = '<valor buscado do atributo>', <atributo> = '<valor buscado do atributo>') //filtra os resultados
 pk // id em django
+<nome variavel que abriga um objeto da class>.save() // sava no banco de dados
 
 INSTALLED_APPS = [
     'django.contrib.admin',
